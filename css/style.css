@@ -1,0 +1,506 @@
+@charset "UTF-8";
+:root{
+    --bgcl:#5F46A6;
+    --imgbgcl:url(/webfinance/assets/img/bghome.png);
+    --bges:#312450;
+    --bgbtn:#222222;
+    --bgbtnh:#2d2d2d;
+    --bgcard:#685C80;
+    --colorpadrao:#ffffff;
+    --colorparag:#ffffffa2;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    scroll-behavior: smooth;
+    font-family: source;
+    color: var(--colorpadrao);
+}
+@font-face {
+    font-family: source;
+    src: url(../assets/fonts/SourceSans3-VariableFont_wght.ttf);
+}
+body{
+    background-color: var(--bgcl);
+}
+header{
+    width: 100%;
+    height: 100vh; 
+    background-color: var(--bgcl);
+    background-image: url(../assets/img/bghome.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#menu{
+    width: 20.5%;
+    height: 100%;
+    background-color: var(--bges);
+    position: fixed;
+}
+#menu > nav{
+    text-align: right;
+    position: relative;
+    top: 30%;
+}
+nav > a{
+    position: relative;
+    line-height: 75px;
+    padding: 50px;
+    text-decoration: none;
+    color: #5c5c5c;
+}
+nav > a:focus{
+    color: #f0f8ff;
+}
+nav > a:hover{
+    color: #f0f8ff;
+}
+nav > a::after{
+    content: " ";
+    height: 1%;
+    background-image: linear-gradient(#11001b, #3e0061, #7901be);
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    width: 0%;
+    transition: 0.6s ease-in-out;
+}
+nav > a:hover::after{
+    width: 90%;
+}
+.basic-text{
+    width: 40%;
+    margin: auto;
+    padding: 5%;
+    position: relative;
+    top: 27%;
+}
+.basic-text > h1{
+    position: relative;
+    bottom: 50px;
+    font-size: 3em;
+    font-weight: 600;
+}
+.basic-text > p{
+    position: relative;
+    bottom: 35px;
+    font-size: 1.3em;
+    text-align: justify;
+    color: var(--colorparag);
+}
+.basic-text > .recado{
+    font-size: 1em;
+    padding: 10px;
+}
+.basic-text > a > button{
+    margin-right: 20px;
+    position: relative;
+    top: 15px;
+    font-size: 1.5em;
+    padding: 1%;
+    font-size: 1.2em;
+    border-radius: 20px;
+    background-color: #ffffff00;
+    border: solid 1px #00000033;
+    cursor: pointer;
+}
+.basic-text > a > button:hover{
+    background-color: #ffffff15;
+}
+#about, #to-start, #form_estrutura{
+    width: 100%;
+    height: 100vh;
+}
+#about, #form_estrutura{
+    background-image: url(../assets/img/bg_comece.png);
+}
+/*Sobre nós - Inico das conf.*/
+/*Sobre nós - Fim das conf.*/
+/*Comece - Inicio das conf.*/
+#to-start{
+    background-image: url(../assets/img/bghome.png);
+}
+#to-start > .basic-text{
+    width: 40%;
+}
+/*Comece - Fim das conf.*/
+/*Contato - Ultima Div do Main - Começo das conf.*/
+#form_estrutura > .card{
+    width: 50%;
+    height: 80vh;
+    border-radius: 5%;
+    position: relative;
+    left: 35%;
+    top: 10%;
+    background-color: #ffffff46;
+}
+.card > form{
+    padding-top: 5%;
+    padding-bottom: 0%;
+    position: relative;
+}
+.card > form > h3{
+    padding: 2%;
+    margin-left: 8%;
+    font-size: 2em;
+    font-weight: 500;
+}
+#form_estrutura > .card > form >  input{
+    width: 40%;
+    height: 50px;
+    position: relative;
+    left: 10%;
+    overflow: hidden;
+    color: var(--bgbtn);
+}
+#form_estrutura > .card > form > #assunto{
+    width: 80.5%;
+}
+#form_estrutura > .card > form > #name{
+    width: 80.5%;
+}
+#form_estrutura > .form_contato > form > #btn_enviar{
+    background-color: var(--bgbtn);
+    color: #BFBFBF;
+    cursor: pointer;
+}
+#form_estrutura > .form_contato > form > #btn_enviar:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+#form_estrutura > .form_contato > form > #btn_email{
+    background-color: var(--bgbtn);
+    color: #BFBFBF;
+    cursor: pointer;
+}
+#form_estrutura > .form_contato > form > #btn_email:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+#form_estrutura > .form_contato > form > #btn_linkedin{
+    background-color: var(--bgbtn);
+    color: #BFBFBF;
+    cursor: pointer;
+}
+#form_estrutura > .form_contato > form > #btn_linkedin:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+/*Footer começo*/
+/*Footer fim*/
+/*Segunda página começo*/
+header > #line{
+    width: 100%;
+    height: 1%;
+    background-color: #312450;
+}
+header > #menu_barra{
+    text-align: right;
+}
+header > #menu_barra > nav > a{
+    color: #e0e0e0db;
+}
+header > #menu_barra > nav > a:hover{
+    color: var(--colorpadrao);
+}
+#titulo_finance > .basic-text{
+    text-align: center;
+    position: relative;
+    top: 150px;
+    margin: auto;
+}
+#listar > #form_estrutura > .form_lista{
+    position: relative;
+    left: 400px;
+}
+#listar > #form_estrutura > .form_lista > form > #btn_salvar{
+    background-color: var(--bgbtn);
+    color: #e0e0e0db;
+    cursor: pointer;
+}
+#listar > #form_estrutura > .form_lista > form > #btn_salvar:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+#listar > #form_estrutura > .form_lista > form > #btn_listar{
+    background-color: var(--bgbtn);
+    color: #e0e0e0db;
+    cursor: pointer;
+}
+#listar > #form_estrutura > .form_lista > form > #btn_listar:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+#listar > #form_estrutura > .form_lista{
+    height: 60vh;
+    position: relative;
+    top: 20%;
+}
+.complement-about{
+    margin-left: 25%;
+}
+#listing{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+#listing > div{
+    padding: 0.5%;
+}
+.list-card{
+    width: 45%;
+    height: 85%;
+    overflow: hidden;
+}
+.list-card > h1{
+    font-weight: 500;
+}
+#listing > .full > table{
+    margin: auto;
+    background-color: aliceblue;
+}
+#listing > .full > table, th{
+    color: #222222;
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 500;
+}
+#full{
+    text-align: left;
+}
+table{
+    width: 100%;
+    margin: auto;
+    background-color: var(--bgcl);
+}
+table, th, tr, td{
+    border-collapse: collapse;
+    padding: 5px;
+    font-weight: 500;
+    text-align: center;
+    color: #222222;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+}
+#about #to-start #form_estrutura{
+    overflow: hidden;
+}
+#graphic_space{
+    width: 45%;
+    height: 50%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    left: 53%;
+    top: 25%;
+}
+#graphic_chart{
+    width: 100% !important;
+    height: auto !important;
+    margin: auto;
+    overflow: hidden;
+}
+#summary{
+    width: 45%;
+    height: 10%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    left: 53%;
+    top: 10%;
+}
+#summary > table{
+    width: 100%;
+    background-color: whitesmoke;
+}
+footer{
+    background-color: var(--bges);
+    text-align: right;
+}
+footer > p{
+    padding: 0.5%;
+    color: var(--colorparag);
+}
+#start-bg{
+    position: absolute;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bgcl);
+}
+.start-bg{
+    width: 80%;
+    position: relative;
+    top: 10%;
+}
+#table_space{
+    width: 45%;
+    height: auto !important;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    left: 53%;
+    top: 5%;
+}
+#listing > #start-bg > .basic-text > input{
+    width: 40%;
+    height: 50px;
+    overflow: hidden;
+    color: var(--bgbtn);
+}
+#listing > #start-bg > .basic-text > #btn_resumo{
+    height: 50px;
+    margin-top: 1%;
+    overflow: hidden;
+    color: var(--bgbtn);
+}
+#listing > #start-bg > .basic-text > #btn_resumo{
+    background-color: whitesmoke;
+    color: var(--bgbtnh);
+    cursor: pointer;
+}
+#listing > #start-bg > .basic-text > #btn_resumo:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+#listing > #start-bg > .basic-text > #btn_grafico{
+    background-color: whitesmoke;
+    color: var(--bgbtnh);
+    cursor: pointer;
+}
+#listing > #start-bg > .basic-text > #btn_grafico:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+#listing > #start-bg > .basic-text > #btn_tabela{
+    background-color: whitesmoke;
+    color: var(--bgbtnh);
+    cursor: pointer;
+}
+#listing > #start-bg > .basic-text > #btn_tabela:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+#listing > #start-bg > .basic-text > #btn_limpar{
+    background-color: whitesmoke;
+    color: var(--bgbtnh);
+    cursor: pointer;
+}
+#listing > #start-bg > .basic-text > #btn_limpar:hover{
+    background-color: var(--bgbtnh);
+    color: var(--colorpadrao);
+}
+/*mode*/
+@media (max-width: 1269px)
+{
+    #menu{
+        display: none;
+    }
+    .basic-text{
+        width: 60%;
+        margin: auto;
+    } 
+    #form_estrutura{
+        overflow-x: hidden;
+    }
+    #form_estrutura > .form_contato{
+        overflow: hidden;
+        position: relative;
+        left: 0;
+        margin: auto;
+    }
+    #listar > #form_estrutura > .form_lista{
+        margin: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 90%;
+        height: 70vh;
+    }
+}
+@media (max-width: 686px)
+{   
+    .basic-text > h1{
+        font-size: 35px;
+    }
+    .basic-text > p a{
+        font-size: 20px;
+    }
+    #form_estrutura > .form_contato{
+        height: 80vh;
+    }
+    #form_estrutura > .form_contato > form > h3{
+        font-size: 25px;
+    }
+    #menu_barra > nav 
+    {
+        text-align: center;
+    }
+    #menu_barra > nav > a{
+        padding: 10px;
+    }
+    #listar > #form_estrutura > .form_lista{
+        margin: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 90%;
+        height: 70vh;
+    }
+    #listing > .list-card{
+        display: block;
+        margin: auto;
+        width: 90%;
+        height: 70vh;
+    }
+}
+@media (max-width: 450px)
+{
+    .basic-text{
+        width: 90%;
+        margin: auto;
+    }
+    #form_estrutura > .form_contato{
+        width: 90%;
+        height: 65vh;
+    }
+    #to-start .basic-text{
+        width: 92%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #start-bg{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #graphic_space{
+        position: relative;
+        left: 26%;
+        top: 40%;
+    }
+    #table_space{
+        width: 90% !important;
+        position: relative;
+        left: 2%;
+        top: 40%;
+    }
+    #table_space > table{
+        width: 100% !important; 
+    }
+    #summary{
+        width: 90% !important;
+        position: relative;
+        left: 5%;
+        top: 40%;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web Finance</title>
+</head>
+<body style="background-color: white;">
+    <header style="background-image: url(assets/img/bghome.png);">
+        <div id="line"></div>
+        <div id="menu_barra">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#listar">Análise Financeira</a>
+                <a href="#">Dúvidas</a>
+            </nav>
+        </div>
+        <div id="titulo_finance">
+            <div class="basic-text">
+                <h1>Financial Solutions</h1>
+                <a href="#listar"><button type="button" id="btntabelar" >Análise de Despesas</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="listar">
+            <div id="form_estrutura">
+                <div class="form_lista card">
+                    <form id="form_listagem">
+                        <h3>Lista de Despesas</h3>
+                        <input type="text" id="name" placeholder=" Nome " required>
+                        <br> <br>
+                        <input type="number" id="receita" placeholder=" Receita (Salários, arrecadações mensais etc...) " required> 
+                        <input type="number" id="despesas" placeholder=" Despesa " required>
+                        <br> <br>
+                        <input type="text" id="descricao" placeholder=" Descrição: casa, alimentação, transporte..."> 
+                        <input type="date" id="data">
+                        <br> <br>
+                        <input type="submit" value="Salvar" id="btn_salvar">
+                        <input type="button" value="Listar" id="btn_listar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="listing" style="display: none;">
+            <div id="start-bg">
+                <div class="basic-text start-bg">
+                    <h1>Análise Financeira</h1>
+                    <input type="button" id="btn_grafico" value="Gráfico">
+                    <input type="button" id="btn_tabela" value="Tabela">
+                    <br>
+                    <input type="button" id="btn_resumo" value="Resumo">
+                    <input type="button" id="btn_limpar" onclick="limpar_dados()" value="Limpar dados">
+                </div>
+            </div>
+            <div id="graphic_space"  style="display: none;">
+                <canvas id="graphic_chart">
+                </canvas>
+            </div>
+            <div id="summary" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Receita </th>
+                        <th>Despesas </th>
+                        <th>Saldo Final </th>
+                    </thead>
+                    <tbody id="summary_table">
+
+                    </tbody>
+                </table>
+            </div>
+                <div id="table_space" class="list-card full" style="margin-bottom: 60px; display: none;"> <!--completa-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome </th>
+                                <th>Receita </th>
+                                <th>Despesas </th>
+                                <th>Descrições </th>
+                                <th>Datas </th>
+                            </tr>
+                        </thead>
+                    
+                    <tbody id="full">
+
+                    </tbody>
+                    </table>
+                </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/financescript.js"></script>
+</body>
+</html>

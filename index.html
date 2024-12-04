@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Ocupa todo o vw disponivel pelo navegador.-->
+    <link rel="shortcut icon" href="assets/favicon/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web Finance</title>
+</head>
+<body>
+    <header id="header">
+        <div id="menu">
+            <div id="mode-page">
+                <input type="button" >
+            </div>
+            <nav>
+                <a href="#header">Início</a> <br>              
+                <a href="#about">Sobre nós</a> <br>
+                <a href="#to-start">Comece já!</a> <br>
+                <a href="#form_estrutura">Entre em contato</a> <br>
+            </nav>
+        </div>
+        <div class="basic-text">
+            <p class="recado">Seja Bem Vindo!</p>
+            <h1>Financial Solutions</h1>
+            <p>
+                Organize suas finanças de forma simples e prática. Registre seus gastos, acompanhe seus ganhos e tenha o controle que você precisa para realizar seus objetivos. Comece hoje a cuidar do seu futuro financeiro!
+            </p>
+            <a href="#to-start"><button type="button" id="btniniciar" >Iniciar</button></a> 
+            <a href="#about"><button type="button" id="btnsabermais" >Saber Mais</button></a>
+        </div>
+    </header>
+    <main>
+        <div id="about">
+            <div class="basic-text complement-about">
+                <h1>Prazer em conhecê-lo</h1>
+                <p>
+                    Nós somos a Finance Solutions. E estamos aqui para simplificar sua organização financeira. <br>
+                    Ajudamos as pessoas a organizar suas finanças para que possam encontrar as melhores opções para suas necessidades. Gerenciar o dinheiro pode parecer desafiador às vezes, por isso nosso objetivo é tornar esse processo mais simples e acessível. Nós fazemos a análise. Você colhe os benefícios.
+                </p>
+               
+            </div>
+        </div>
+        <div id="to-start">
+            <div class="basic-text start">
+                <h1>Realize sua analise financeira!</h1>
+                <p>
+                    Organize suas finanças de forma simples e prática. Registre seus gastos, acompanhe seus ganhos e tenha o controle que você precisa para realizar seus objetivos. Comece hoje a cuidar do seu futuro financeiro!
+                </p>
+                <a href="finance.html"><button type="button" id="" >Iniciar</button></a> 
+            </div>
+        </div>
+        <!---->
+        <div id="form_estrutura">
+            <div class="form_contato card"> <!--Font_width deixar h3 mais "magrinha"-->
+                <form>
+                    <h3>Permita-me entrar em contato com você!</h3>
+                    <input type="text" id="nome" placeholder=" Nome ">
+                    <input type="email" id="email" placeholder=" E-mail ">
+                    <br> <br>
+                    <input type="text" id="assunto" placeholder=" Assunto ">
+                    <br> <br>
+                    <input type="button" value="Enviar" id="btn_enviar">
+                </form>
+                <form>
+                    <h3 style="text-align: center;">Entre em contato comigo!</h3>
+                    <input type="button" value="E-mail" id="btn_email" onclick="window.location.href='mailto:jhenifer.moura.ifpr@gmail.com';">
+                    <input type="button" value="Linkedin" id="btn_linkedin" onclick="window.open('https:br.linkedin.com');">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            @Jhenifer Regina de Moura || 2024
+        </p>
+    </footer>
+    <script type="text/javascript" src="js/financescript.js"></script>
+</body>
+</html>
